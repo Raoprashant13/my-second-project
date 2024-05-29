@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Navbar from './Navbar'
+import Button from './Button'
+import {} from 'react-icons/fa'
+import{FaYoutube} from 'react-icons/fa'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar/>
+   
+    <div className='dev'>
+      <h1 className='header'> Full screen landing page with transparent navbar</h1> 
+      
+      <FaYoutube style={{color:'RED',fontSize:180}}/> 
+      <h2 className='para'>YOUTUBE 2.O</h2>
+       <input type='email' className='inpu' placeholder='email' />
+       <input type='password' className='inpu' placeholder='password'/>
+     <Button/>
+      
     </div>
-  );
+    
+    </>  
+  )
 }
 
-export default App;
+export default App
